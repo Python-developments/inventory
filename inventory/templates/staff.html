@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+{% block content %}
+    <h1>Staff page</h1>
+    {% for staff in staffs %}
+        <h2>{{ staff.name }}</h2>
+        <br>
+        {{ staff.phone }}
+        <br>
+    {% endfor %}
+{% endblock content %}
